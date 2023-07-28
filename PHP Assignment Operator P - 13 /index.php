@@ -1,6 +1,17 @@
 <?php 
+ 
+   
+   $amount = 15;
 
-  echo  $amount = 10;
+   // $amount = $amount + 8;
+
+   $amount -= 5; 
+
+   echo $amount;
+
+
+
+
 
 
 ?>
