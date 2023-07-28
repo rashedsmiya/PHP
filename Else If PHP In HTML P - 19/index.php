@@ -1,6 +1,6 @@
 <?php
 
-$month_name = 'jan';
+$month_name = 'jan'; 
 
 if ($month_name === 'jan') {
    echo "January"; 
