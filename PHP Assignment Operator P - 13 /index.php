@@ -8,7 +8,7 @@
    $amount -= 5; 
 
    echo $amount;
-
+   
 
 
 
