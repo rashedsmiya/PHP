@@ -6,6 +6,32 @@
     <title>Class 26</title>
 </head>
 <body>
-    
+
+ <form action="#">
+    Year
+    <select name="" id="">
+        <?php
+        $year = 2000;
+        while ($year <= 2050){
+        ?>
+            <option value="<?php echo $year; ?>"><?php echo $year; ?></option>
+        <?php 
+        $year++;
+        }
+
+        ?>
+
+        <?php 
+            $year = 2000;
+            while ($year <= 2050){
+                echo "<option value='$year'>$year</option>";
+                $year++;
+            }        
+        
+        ?>
+
+    </select>
+</form>
+
 </body>
 </html>
