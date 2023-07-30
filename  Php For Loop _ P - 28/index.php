@@ -6,13 +6,18 @@
     <title>Class 28</title>
 </head>
 <body>
+
+
       <ul>
         <?php
          for ($user_count = 1; $user_count <= 50; $user_count++){
            
           ?>
 
-            <li>User 1</li>
+            <li>User <?php 
+            
+            
+            ?></li>
 
             <?php
             
