@@ -14,13 +14,9 @@
            
           ?>
 
-            <li>User <?php 
-            
-            
-            ?></li>
+            <li>User <?php echo $user_count ?></li>
 
             <?php
-            
           
          }
         
