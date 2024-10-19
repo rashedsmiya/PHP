@@ -1,11 +1,13 @@
 <?php 
 
-   $cell = "0987654321";
+   $cell = " 0987654321";
+
    function getAddress(){
-     global $cell;
-      echo $cell;
+
+    echo "amar number".$GLOBALS['cell'];
 
    }
+
    getAddress()
 
 ?>
