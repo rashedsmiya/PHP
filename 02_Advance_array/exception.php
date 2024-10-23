@@ -4,13 +4,14 @@
 
       if($age<=18){
 
-         throw new Exception("tumi age hote hobe 18 er upore");
+         return true; 
       }
-      return true;
+      throw new Exception("tumi age hote hobe 18 er upore");
+      
    }
 
    try{
-      ageCalculate(15);
+      ageCalculate(10  );
       echo "you are voter";
    }
 
@@ -18,8 +19,8 @@
       echo $exp->getMessage();
    }
 
-   finally{
-      echo "go next";
-   }
+   // finally{
+   //    echo "go next";
+   // }
 
 ?>
