@@ -133,12 +133,36 @@ MYDATA;
    }  
 
    // Do While Loop
+
    $num = 1;
    do{
       echo "Geekyshows Count: $num <br>";
       $num++;
    } while($num <= 3);
 
+   // for loop with numeric array 
+
+   $name = array("Rahul", "Soname", "Sumit", "Priti");
+    for($i=0; $i<count($name); $i++){
+      echo "\$name[$i] = " . $name[$i]."<br>";
+    }
+
+   //  Array_keys function 
+
+   $fees = array("Rahul"=>500, "Sonam"=>600, "Sumit"=>700);
+    $keys = array_keys($fees);
+    for($i=0; $i<=2; $i++){
+      echo $keys[$i] . "<br/>";
+    }
+
+   //  for Loop with Associative Array 
    
+   $fees = array("Rahul"=>500, "Sonam"=>600, "Sumit"=>700);
+    $keys = array_keys($fees);
+    for($i=0; $i<=2; $i++){
+      echo $keys[$i] . "<br/>";
+    }
+
+    
 
 ?>
