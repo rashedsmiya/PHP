@@ -99,6 +99,7 @@ MYDATA;
    echo $result;
 
    // While Loop
+
    $num = 1;
    while($num <= 5)
    {
@@ -115,7 +116,29 @@ MYDATA;
    endwhile;
    echo "Rest of the code";
 
-   
+   // Nested While Loop
+
+   $num = 1;
+   while ($num <= 3)
+   {
+      echo "GeekyShows Count: $num";
+      $num++;
+
+      $val = 1;
+      while ($val <= 3)
+      {
+         echo "Val: $val <br>";
+         $val++;
+      }
+   }  
+
+   // Do While Loop
+   $num = 1;
+   do{
+      echo "Geekyshows Count: $num <br>";
+      $num++;
+   } while($num <= 3);
+
    
 
 ?>
