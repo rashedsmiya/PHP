@@ -163,6 +163,13 @@ MYDATA;
       echo $keys[$i] . "<br/>";
     }
 
-    
+   //  Type specifiers 
+
+     $q = 2;
+     $m = "Laptops";
+     $p = 20000.50;
+     printf("I have %d %s and price each %f",$q,$m,$p);
+
+
 
 ?>
