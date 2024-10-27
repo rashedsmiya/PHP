@@ -25,7 +25,7 @@
                'author_name' => 'Hero Alom',
                'total_enrolled' => 300,
                'course_price' => 500, 
-               'thumbnail' => 'sql.jpg',
+               'thumbnail' => 'img/sql.jpg',
             ],
 
             [
