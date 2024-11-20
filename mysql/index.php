@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
-<body>
+<?php 
 
-      
+    // Connecting MySql with Procedural aporoach
 
-</body>
-  <?php require_once("nav.php")?>
-  <br><br>
-  <hr>
-  <br><br>
-</html>
+    $servername = "localhost";
+    $username   = "root";
+    $password   = "";
+    $dbName     = "phptutorial";
+
+    // Create Connection
+    $conn = new mysqli($servername, $username, $password, $dbName);
+
+    // Check Connection
+    if($conn->connect_error){
+        echo "Connection failed: " . $conn->connect_error;
+    }
+
+  
+    
