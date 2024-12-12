@@ -549,3 +549,73 @@ if(isset($_REQUEST['submit'])){
     $conn->close();
 
 ?>
+
+
+<?php
+
+     // Insert Query
+     $date = date("Y-m-d H:i:s");
+     $sql = "insert into users (username, password, created_at) 
+            values ('wasim', 'pass123', '$date')";
+ 
+     $result = $conn->query($sql); 
+ 
+     if($result == true){
+       echo "New Record Created";
+     } else{
+       echo "No record Created, error:" . $conn->error;
+     }
+
+
+
+     $sql = "select id, username, created_at from users where id = 3";
+        $result = $conn->query($sql);
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                echo "<pre>";
+                print_r($row);
+            }
+        }
+
+
+        $sql = "update users set username = 'Hridoy' where id=2";
+        $res = $conn->query($sql);
+
+        if($res){
+            echo "Update successfully";
+        } else echo "Not Updated";
+
+        
+        $sql = "delete from users where id = 1";
+        $res = $conn->query($sql);
+        
+        if($res){
+            echo "Record";
+        } else echo "No";
+?>
+
+        // <!-- Insert Data in Php  -->
+
+<?php 
+
+    $host     = 'localhost';
+    $user     = 'root';
+    $password = '';
+    $dbname   = 'phpdatabase';
+
+    $conn = mysqli_connect($host, $user, $password, $dbname);
+
+    $user = $_GET['user'];
+    $pass = $_GET['pass'];
+
+
+    $sql = "INSERT INTO register (username, password) VALUES('$user', '$pass')";
+    $check =   mysqli_query($conn, $sql);
+
+            if($check == true){
+                echo "Data inserted Successfully";
+                header('location:index.php');
+            }else{
+                echo "Data insertion Failed";
+            }
+            ?>
